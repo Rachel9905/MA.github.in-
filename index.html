@@ -1,9 +1,140 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Test page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Botanical Skincare | Pure & Organic Care</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics 4 (GA4) Global Site Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
-<p>This is page 1</p>
-<a href="page2.html">Go to Page 2</a>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aura <span>Botanicals</span></a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Nourish Your Skin with Pure Nature</h1>
+            <p>Sustainably harvested, 100% botanical skincare formulated to reveal your natural glow.</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-primary">Explore Products</a>
+                <a href="about.html" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Highlights -->
+    <section class="features container">
+        <div class="feature-card">
+            <h3>100% Organic</h3>
+            <p>Every ingredient is ethically sourced from certified organic farms.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Cruelty-Free</h3>
+            <p>Leaping Bunny certified. We never test on animals.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Eco Packaging</h3>
+            <p>Zero plastic waste with our glass and biodegradable containers.</p>
+        </div>
+    </section>
+
+    <!-- Featured Products Preview -->
+    <section class="featured-products container">
+        <h2>Bestselling Formulas</h2>
+        <div class="grid grid-3">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1608248597263-0057e57b4522?auto=format&fit=crop&w=600&q=80" alt="Rose Water Serum">
+                <div class="card-body">
+                    <span class="badge">Serums</span>
+                    <h3>Radiance Rose Serum</h3>
+                    <p>Deep hydration with pure Bulgarian rose water and hyaluronic acid.</p>
+                    <div class="card-footer">
+                        <span class="price">$38.00</span>
+                        <a href="products.html" class="btn btn-sm product-cta" data-name="Radiance Rose Serum" data-price="38.00" data-category="Serums">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Green Tea Moisturizer">
+                <div class="card-body">
+                    <span class="badge">Moisturizers</span>
+                    <h3>Green Tea Balance Cream</h3>
+                    <p>Lightweight gel cream infused with antioxidants for daily protection.</p>
+                    <div class="card-footer">
+                        <span class="price">$42.00</span>
+                        <a href="products.html" class="btn btn-sm product-cta" data-name="Green Tea Balance Cream" data-price="42.00" data-category="Moisturizers">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Clay Mask">
+                <div class="card-body">
+                    <span class="badge">Masks</span>
+                    <h3>Detoxifying Kaolin Mask</h3>
+                    <p>Pore-refining clay mask with tea tree and eucalyptus essential oils.</p>
+                    <div class="card-footer">
+                        <span class="price">$34.00</span>
+                        <a href="products.html" class="btn btn-sm product-cta" data-name="Detoxifying Kaolin Mask" data-price="34.00" data-category="Masks">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Aura <span>Botanicals</span></a>
+                <p>Clean beauty products engineered by nature.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Stay Connected</h4>
+                <p>Subscribe for skincare tips and exclusive release access.</p>
+                <form class="newsletter-form" id="footer-newsletter">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Join</button>
+                </form>
+                <div id="newsletter-message" class="form-feedback"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura Botanical Skincare. Demo website for Marketing Analytics Course.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

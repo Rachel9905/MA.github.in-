@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Aura Botanical Skincare</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics 4 (GA4) Global Site Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aura <span>Botanicals</span></a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Botanical Product Catalog</h1>
+            <p>Formulated without parabens, sulfates, or artificial fragrances.</p>
+        </div>
+    </section>
+
+    <section class="container catalog-section">
+        <!-- Category Filters -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="serum">Serums</button>
+            <button class="filter-btn" data-filter="moisturizer">Moisturizers</button>
+            <button class="filter-btn" data-filter="cleanser">Cleansers</button>
+            <button class="filter-btn" data-filter="mask">Masks</button>
+        </div>
+
+        <!-- 6 Products Grid -->
+        <div class="grid grid-3" id="product-grid">
+            
+            <div class="card product-card" data-category="serum">
+                <img src="https://images.unsplash.com/photo-1608248597263-0057e57b4522?auto=format&fit=crop&w=600&q=80" alt="Radiance Rose Serum">
+                <div class="card-body">
+                    <span class="badge">Serum</span>
+                    <h3>Radiance Rose Serum</h3>
+                    <p>Replenishes moisture reserves and evens out skin tone naturally.</p>
+                    <div class="card-footer">
+                        <span class="price">$38.00</span>
+                        <button class="btn btn-sm product-cta" data-name="Radiance Rose Serum" data-price="38.00" data-category="Serum">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-card" data-category="moisturizer">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Green Tea Balance Cream">
+                <div class="card-body">
+                    <span class="badge">Moisturizer</span>
+                    <h3>Green Tea Balance Cream</h3>
+                    <p>Lightweight gel texture locks in hydration without clogging pores.</p>
+                    <div class="card-footer">
+                        <span class="price">$42.00</span>
+                        <button class="btn btn-sm product-cta" data-name="Green Tea Balance Cream" data-price="42.00" data-category="Moisturizer">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-card" data-category="cleanser">
+                <img src="https://images.unsplash.com/photo-1556228722-d119177a6411?auto=format&fit=crop&w=600&q=80" alt="Chamomile Cleansing Milk">
+                <div class="card-body">
+                    <span class="badge">Cleanser</span>
+                    <h3>Chamomile Cleansing Milk</h3>
+                    <p>Gently removes impurities and light makeup while soothing skin.</p>
+                    <div class="card-footer">
+                        <span class="price">$29.00</span>
+                        <button class="btn btn-sm product-cta" data-name="Chamomile Cleansing Milk" data-price="29.00" data-category="Cleanser">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-card" data-category="mask">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Detoxifying Kaolin Mask">
+                <div class="card-body">
+                    <span class="badge">Mask</span>
+                    <h3>Detoxifying Kaolin Mask</h3>
+                    <p>Mineral-rich clay draws out surface toxins and refines skin texture.</p>
+                    <div class="card-footer">
+                        <span class="price">$34.00</span>
+                        <button class="btn btn-sm product-cta" data-name="Detoxifying Kaolin Mask" data-price="34.00" data-category="Mask">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-card" data-category="serum">
+                <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80" alt="Vitamin C Night Elixir">
+                <div class="card-body">
+                    <span class="badge">Serum</span>
+                    <h3>Vitamin C Night Elixir</h3>
+                    <p>Overnight treatment to boost skin firmness and diminish dark spots.</p>
+                    <div class="card-footer">
+                        <span class="price">$54.00</span>
+                        <button class="btn btn-sm product-cta" data-name="Vitamin C Night Elixir" data-price="54.00" data-category="Serum">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-card" data-category="moisturizer">
+                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Jojoba Recovery Oil">
+                <div class="card-body">
+                    <span class="badge">Moisturizer</span>
+                    <h3>Jojoba Recovery Oil</h3>
+                    <p>Cold-pressed pure oil treatment for deep barrier restoration.</p>
+                    <div class="card-footer">
+                        <span class="price">$46.00</span>
+                        <button class="btn btn-sm product-cta" data-name="Jojoba Recovery Oil" data-price="46.00" data-category="Moisturizer">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Aura <span>Botanicals</span></a>
+                <p>Clean beauty products engineered by nature.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Stay Connected</h4>
+                <p>Subscribe for skincare tips and exclusive release access.</p>
+                <form class="newsletter-form" id="footer-newsletter-2">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura Botanical Skincare. Demo website for Marketing Analytics Course.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

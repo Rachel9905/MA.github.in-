@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aura Botanical Skincare</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics 4 (GA4) Global Site Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aura <span>Botanicals</span></a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions about your skin routine or orders? Send us a message.</p>
+        </div>
+    </section>
+
+    <section class="container contact-section">
+        <div class="contact-grid">
+            
+            <!-- Contact Details -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Reach out to our customer care team or visit our flagship studio.</p>
+                
+                <div class="info-item">
+                    <strong>Address:</strong>
+                    <p>124 Botanical Way, Innovation District, CA 90210</p>
+                </div>
+                <div class="info-item">
+                    <strong>Email:</strong>
+                    <p>support@aurabotanicals.demo</p>
+                </div>
+                <div class="info-item">
+                    <strong>Phone:</strong>
+                    <p>+1 (800) 555-AURA</p>
+                </div>
+                <div class="info-item">
+                    <strong>Hours:</strong>
+                    <p>Monday – Friday: 9 AM – 6 PM PST</p>
+                </div>
+                
+                <div class="social-links">
+                    <h4>Follow Us</h4>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Twitter / X</a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2>Send an Enquiry</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                        <span class="error-msg" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                        <span class="error-msg" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic...</option>
+                            <option value="product_inquiry">Product Advice</option>
+                            <option value="order_status">Order Status</option>
+                            <option value="wholesale">Wholesale Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-msg" id="subject-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        <span class="error-msg" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Aura <span>Botanicals</span></a>
+                <p>Clean beauty products engineered by nature.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Stay Connected</h4>
+                <p>Subscribe for skincare tips and exclusive release access.</p>
+                <form class="newsletter-form" id="footer-newsletter-4">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura Botanical Skincare. Demo website for Marketing Analytics Course.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
